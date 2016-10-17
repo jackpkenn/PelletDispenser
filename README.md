@@ -13,7 +13,7 @@ This food pellet dispenser was developed by Dylan Guenther and Jack Kennedy at D
 
 ## Code Examples
 Break-beams are interrupt driven to keep track of the number of pellets dispensed. The Adafruit motor driver library was used to handle the motor control.
-```sh
+```cpp
 void beamBroken_isr(){
   noInterrupts();
   pells--;
@@ -28,7 +28,7 @@ void beamBroken_isr(){
 }
 ```
 The dispenser is set to switch the direction of the rotor after every five steps. This was found to reduce jamming and crushed pellets. A delay of 100ms was added after each step to help the break-beams to detect individual pellets.
-```sh
+```cpp
 if (f == "disp" || f == "Disp") {
   pellsR = param;
   Serial.print("Dispensing ");

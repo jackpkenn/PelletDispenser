@@ -47,6 +47,6 @@ if (f == "disp" || f == "Disp") {
 }
 ```
 ## License and Disclaimer
-This software is open-sourced under the MIT Licence (see ```license.txt``` for the full license).
+This software is open-sourced under the MIT Licence (see ```LICENSE``` for the full license).
 
 The software is provided as is. It might work as expected - or not. Just don't blame us.
